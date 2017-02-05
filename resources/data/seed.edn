@@ -1,0 +1,21 @@
+[;; posts
+ {:db/id #db/id[:db.part/user]
+  :post/title "Article 1"
+  :post/url "http://google.com"
+  :post/count 1
+  :post/person #db/id[:db.part/user -101]}
+
+ {:db/id #db/id[:db.part/user]
+  :post/title "Article 2"
+  :post/url "http://twitter.com"
+  :post/count 2
+  :post/person #db/id[:db.part/user -100]}
+
+ ;; people
+ {:db/id #db/id[:db.part/user -100]
+  :person/name "Alban"
+  :person/email "albanlv@gmail.com"}
+
+ {:db/id #db/id[:db.part/user -101]
+  :person/name "Zaiste"
+  :person/email "oh@zaiste.net"}]
